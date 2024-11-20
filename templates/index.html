@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/">Zainam</a>
+      <a href="https://github.com/rks-031/google-colab-liver-disease.git"
+        >CodeSpace</a
+      >
+    </div>
+
+    <h2>
+      <a href="/">
+        <p style="text-align: center">
+          Welcome to Zainam liver Disease Predictor
+        </p></a
+      >
+    </h2>
+
+    <div class="center">
+      <form action="/predict" method="post">
+        <input type="text" id="Age" placeholder="Age " name="Age" />
+        <br />
+        <input
+          type="text"
+          id="Gender"
+          placeholder="Gender (Male:1 , female:0)"
+          name="Gender"
+        />
+        <br />
+        <input
+          type="text"
+          id="Total_Bilirubin"
+          placeholder="Total_Bilirubin"
+          name="Total_Bilirubin"
+        />
+        <br />
+        <input
+          type="text"
+          id="Direct_Bilirubin"
+          placeholder="Direct Bilirubin"
+          name="Direct_Bilirubin"
+        />
+        <br />
+        <input
+          type="text"
+          id="Alkaline_Phosphotase"
+          placeholder="Alkaline Phosphotase"
+          name="Alkaline_Phosphotase"
+        />
+        <br />
+        <input
+          type="text"
+          id="Alamine_Aminotransferase"
+          placeholder="Alamine Aminotransferase"
+          name="Alamine_Aminotransferase"
+        />
+        <br />
+        <input
+          type="text"
+          id="Aspartate_Aminotransferase"
+          placeholder="Aspartate_Aminotransferase"
+          name="Aspartate_Aminotransferase"
+        />
+        <br />
+        <input
+          type="text"
+          id="Total_Protiens"
+          placeholder="Total Protiens"
+          name="Total_Protiens"
+        />
+        <br />
+        <input type="text" id="Albumin" placeholder="Albumin " name="Albumin" />
+        <br />
+        <input
+          type="text"
+          id="Albumin_and_Globulin_Ratio"
+          placeholder="Albumin and Globulin_Ratio"
+          name="Albumin_and_Globulin_Ratio"
+        />
+        <br />
+        <br />
+
+        <button type="submit" class="registerbtn">Predict</button>
+      </form>
+    </div>
+  </body>
+</html>
